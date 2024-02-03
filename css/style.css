@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+:root {
+    --main-color-yellow: hsl(47, 88%, 63%);
+    --secondary-color-gray: hsl(0, 0%, 50%);
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************
+*        BOX        *
+********************/
+
+.box {
+    width: 350px;
+    border: 1px solid black;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 7px 7px 1px black;
+}
+
+.illustration {
+    display: block;
+    width: -webkit-fill-available;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+article {
+    padding: 0 20px;
+}
+
+article span:first-of-type {
+    background-color: var(--main-color-yellow);
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+article span:last-of-type {
+    font-weight: light;
+    display: inline-block;
+    margin: 0 0 15px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+p {
+    color: var(--secondary-color-gray);
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-weight: light;
+}
+
+.avatar {
+    width: 32px;
+}
+
+h2 {
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    font-weight: 800;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+/********************
+*       FOOTER      *
+********************/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color:var(--secondary-color-gray);
+}
+
+a:last-of-type {
+    color: #3c065e;
+}
+
+/********************
+*     ANIMATIONS    *
+********************/
+
+h1:hover {
+    color: var(--main-color-yellow);
+    transition-duration: 200ms;
+}
+
+h2:hover {
+    color: var(--main-color-yellow);
+    transition-duration: 200ms;
+}
+
+article span:first-of-type:hover {
+    color: var(--main-color-yellow);
+    background-color: black;
+    transition-duration: 200ms;
+}
+
+a:hover {
+    color: var(--main-color-yellow);
+    transition-duration: 200ms;
+}
+
+a:last-of-type:hover {
+    color: #7805c0;
+    transition-duration: 200ms;
+}
